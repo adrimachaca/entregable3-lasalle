@@ -51,6 +51,12 @@ header h1 {
    background-repeat: no-repeat;
 }
 
+@media (width <= 769px){
+   header h1 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("/img/header-mini.png");
+   }
+}
+
 /*--------------------------------------------NavBar--------------------------------------------*/
 
 nav {
@@ -76,6 +82,12 @@ nav a:hover {
    background-color: #ffffff;
    color: #6C22A6;
    border-radius: 5px;
+}
+
+@media (width <= 992px){
+   #navegacion {
+      justify-content: end;
+   }
 }
 
 /* Who We are section */
@@ -115,6 +127,13 @@ nav a:hover {
    border-left:  1px solid rgba(119, 136, 153, 0.274);
    padding-left: 20px;
    position:relative;
+}
+
+@media (width <= 992px){
+   .vl {
+      border-left:  none;
+      padding-left: 0px;
+   }
 }
 
 /*--------------------------------------------Services Section--------------------------------------------*/
@@ -316,5 +335,28 @@ nav a:hover {
 @media (width >= 810px) {
    #contact form {
       width: 50%;
+   }
+}
+
+footer p {
+   background-color: rgb(99, 69, 138);
+   color: #ffffff;
+   text-align: right;
+   font-size: x-small;
+   padding: 10px 10px;
+}
+
+footer p a {
+   color: #ffffff;
+}
+
+footer p a:hover {
+   background-color: #ffffff;
+   color: rgb(99, 69, 138);
+}
+
+@media (width <= 769px){
+   footer {
+      text-align: center;
    }
 }
